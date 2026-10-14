@@ -39,10 +39,10 @@ INVITE_KEYWORD = "listenTogether"
 
 @register(
     "astrbot_plugin_nomi_music",
-    "DSH",
+    "shamate-tv",
     "诺米一起听",
     "1.0.0",
-    "",
+    "https://github.com/shamate-tv/astrbot_plugin_nomi_music",
 )
 class NomiMusic(Star):
     """一起听插件主体。

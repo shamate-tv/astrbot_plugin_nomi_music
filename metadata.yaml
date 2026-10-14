@@ -14,8 +14,8 @@ desc: |
   ⚠️ 使用前需要自备一个网易云 API 服务（api-enhanced）与一个网易云账号 cookie，
   详见插件仓库的 README。本插件调用的是非官方接口，请务必使用小号。
 version: 1.0.0 # 遵循语义化版本
-author: DSH
-repo: https://github.com/REPLACE_WITH_YOUR_GITHUB_USERNAME/astrbot_plugin_nomi_music # 插件仓库地址
+author: shamate-tv
+repo: https://github.com/shamate-tv/astrbot_plugin_nomi_music # 插件仓库地址
 astrbot_version: ">=4.11.0"
 tags: # 标签，用于市场分类与搜索
   - 音乐
