@@ -1,0 +1,34 @@
+{
+  "api_base": {
+    "description": "网易云 API 服务地址（需自行部署，详见 README）",
+    "type": "string",
+    "default": "http://127.0.0.1:3100",
+    "hint": "例如 http://127.0.0.1:3100 或 http://192.168.1.10:3100"
+  },
+  "cookie_file": {
+    "description": "网易云账号 cookie 文件路径（把 MUSIC_U=xxx; __csrf=yyy 存成一个文件）",
+    "type": "string",
+    "default": "data/plugin_data/nomi_music/cookie.txt",
+    "hint": "建议放在 AstrBot 的 data 目录下，避免插件更新时被覆盖"
+  },
+  "poll_interval": {
+    "description": "轮询一起听房间的间隔（秒）。越小越实时，但请求也越多；不建议低于 10 秒",
+    "type": "int",
+    "default": 10
+  },
+  "auto_accept": {
+    "description": "收到「一起听」邀请时自动接受",
+    "type": "bool",
+    "default": true
+  },
+  "notify_on_song_change": {
+    "description": "切歌时主动发一条消息（需先在群里/私聊跟 bot 说过话）",
+    "type": "bool",
+    "default": true
+  },
+  "notify_umo": {
+    "description": "切歌提醒发往哪个会话（留空 = 最近一次跟 bot 说话的会话）",
+    "type": "string",
+    "default": ""
+  }
+}

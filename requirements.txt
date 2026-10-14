@@ -1,0 +1,2 @@
+# AstrBot 自带 aiohttp，这里显式声明以满足插件依赖规范
+aiohttp>=3.8.0

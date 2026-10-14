@@ -1,0 +1,33 @@
+name: astrbot_plugin_nomi_music # 插件唯一标识符，英文
+display_name: 一起听 # 插件展示名称
+short_desc: 让 bot 进入网易云「一起听」房间，知道你在听哪首歌 # 紧凑 UI 短描述
+desc: |
+  让 bot 真正进入网易云音乐的「一起听」房间，和你在听同一首歌。
+
+  功能：
+  - 自动接受「一起听」邀请，进入同一个房间；
+  - 读出当前播放的歌曲、歌手、专辑、播放进度，并定位到**当前唱到哪一句歌词**；
+  - 提供 `music_now` / `music_room` 两个 LLM 工具，让 bot 能自己决定何时查询、再据此陪你聊；
+  - 切歌时主动发消息提醒（可关闭）；
+  - 指令：`/一起听`、`/听歌状态`。
+
+  ⚠️ 使用前需要自备一个网易云 API 服务（api-enhanced）与一个网易云账号 cookie，
+  详见插件仓库的 README。本插件调用的是非官方接口，请务必使用小号。
+version: 1.0.0 # 遵循语义化版本
+author: DSH
+repo: https://github.com/REPLACE_WITH_YOUR_GITHUB_USERNAME/astrbot_plugin_nomi_music # 插件仓库地址
+astrbot_version: ">=4.11.0"
+tags: # 标签，用于市场分类与搜索
+  - 音乐
+  - 网易云
+  - 一起听
+  - 娱乐
+support_platforms: # 支持的平台适配器
+  - aiocqhttp
+  - qq_official
+  - telegram
+  - lark
+  - dingtalk
+  - discord
+  - slack
+  - kook
